@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "sources": [
+    "../../scss/-globalvariables.scss",
+    "-globalvariables.css"
+  ],
+  "names": [],
+  "mappings": "AAAA;EACE,gBAAA;EACA,eAAA;EACA,iBAAA;ACCF;;ADCA;EACE,gBAAA;EACA,eAAA;EACA,iBAAA;ACEF",
+  "file": "-globalvariables.css"
+}

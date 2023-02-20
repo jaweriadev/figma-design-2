@@ -1,0 +1,8 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-nav-item {
+  text-decoration: none;
+}/*# sourceMappingURL=-styling.css.map */

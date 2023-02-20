@@ -1,0 +1,17 @@
+@import "globalvariables";
+@import "styling";
+.container-b {
+  margin: 0 auto;
+  max-width: 1920px;
+  width: 100%;
+  max-width: calc(1920px - 260px);
+  @media screen and(max-width:1740px) {
+    padding: 0 80px;
+  }
+  @media screen and(max-width:540px) {
+    padding: 0 36px;
+  }
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
