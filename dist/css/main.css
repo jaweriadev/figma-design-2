@@ -6,7 +6,13 @@ h1 {
 @media screen and (max-width: 767px) {
   h1 {
     font-size: 44px;
-    line-height: 50px;
+    line-height: 1.2;
+  }
+}
+@media screen and (max-width: 540px) {
+  h1 {
+    font-size: 28px;
+    line-height: 1.2;
   }
 }
 
@@ -25,6 +31,7 @@ span {
 p {
   font-weight: 400;
   font-size: 24px;
+  line-height: 1.2;
 }
 
 h2 {
@@ -51,6 +58,10 @@ h3 {
     font-size: 18px;
     line-height: 34px;
   }
+  p {
+    font-size: 12px;
+    line-height: 1.2;
+  }
 }
 .nav-right-logos {
   display: flex;
@@ -58,13 +69,18 @@ h3 {
   width: 100%;
   justify-content: flex-end;
 }
+@media screen and (max-width: 992px) {
+  .nav-right-logos {
+    display: none;
+  }
+}
 
 .list-items {
   width: auto;
+  padding: 20px;
 }
 
 .navbar {
-  max-width: 1920px;
   margin: 0 auto;
   padding: 0 40px;
   height: 80px;
@@ -141,6 +157,25 @@ h3 {
   height: 670px;
   background-size: cover;
 }
+@media screen and (max-width: 767px) {
+  .bg {
+    background-image: none;
+    height: unset;
+  }
+}
+
+.first-bg {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .first-bg {
+    display: block;
+    width: 100%;
+    height: 200px;
+    background-position: top right;
+    background-size: cover;
+  }
+}
 
 .logo3 {
   border: 1px solid #e1e5e8;
@@ -182,10 +217,25 @@ h3 {
   padding-top: 100px;
   max-width: 607px;
 }
+@media screen and (max-width: 767px) {
+  .first-section {
+    padding-top: 50px;
+  }
+}
 .first-section-btn {
   padding-top: 64px;
 }
-.first-section-btn button {
+@media screen and (max-width: 540px) {
+  .first-section h1 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .first-section span {
+    font-size: 10px;
+  }
+}
+.first-section button {
   background: linear-gradient(90deg, #fb0131 0%, #8b1ec8 100%);
   border-radius: 6px;
   max-width: 180px;
@@ -209,7 +259,7 @@ h3 {
 .section2-para {
   display: flex;
   justify-content: center;
-  line-height: 42px;
+  line-height: 1.2;
   text-align: center;
 }
 
@@ -233,6 +283,7 @@ h3 {
 @media screen and (max-width: 767px) {
   .cards {
     grid-template-columns: 1fr;
+    justify-items: center;
   }
 }
 
@@ -278,7 +329,7 @@ h3 {
 }
 @media screen and (max-width: 1024px) {
   .brands {
-    padding: 50px;
+    padding: 28px;
   }
 }
 
@@ -569,8 +620,7 @@ h3 {
 .gipsy span {
   font-weight: 400;
   font-size: 24px;
-  line-height: 36px;
-  padding-top: 60px;
+  line-height: 1.2;
 }
 .gipsy h2 {
   font-weight: 700;
@@ -580,8 +630,10 @@ h3 {
 }
 @media screen and (max-width: 540px) {
   .gipsy h2 {
-    font-size: 28px;
-    line-height: 44px;
+    font-size: 24px;
+    line-height: 1.2;
+    padding-top: 0;
+    margin-top: 20px;
   }
 }
 .gipsy p {
@@ -595,6 +647,8 @@ h3 {
   .gipsy p {
     padding-right: unset;
     padding: 12px;
+    font-size: 16px;
+    line-height: 1.2;
   }
 }
 
@@ -629,8 +683,10 @@ h3 {
 }
 @media screen and (max-width: 540px) {
   .robot-1 .robot-heading {
-    align-items: unset;
-    width: unset;
+    align-items: none;
+    width: 45%;
+    padding-left: 0;
+    margin: auto;
   }
 }
 
@@ -642,7 +698,7 @@ h3 {
   justify-content: space-between;
   margin-bottom: 120px;
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 767px) {
   .apex {
     flex-direction: column;
     padding: 12px;
@@ -651,11 +707,24 @@ h3 {
 .apex img {
   max-width: 556px;
   width: 100%;
-  height: 430px;
+  max-height: 430px;
+  height: 100%;
+}
+@media screen and (max-width: 540px) {
+  .apex img {
+    max-width: 100%;
+    height: unset;
+  }
 }
 .apex .text-apex {
   padding-top: 104px;
   padding-left: 120px;
+}
+@media screen and (max-width: 767px) {
+  .apex .text-apex {
+    padding-top: 12px;
+    padding-left: 12px;
+  }
 }
 @media screen and (max-width: 540px) {
   .apex .text-apex {
@@ -674,16 +743,16 @@ h3 {
   text-align: center;
   align-items: center;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 6px;
   color: white;
 }
 .apex .text-apex h2 {
-  line-height: 49px;
+  line-height: 1.2;
 }
 .apex .text-apex p {
-  line-height: 36px;
-  padding-top: 12px;
-  padding-bottom: 29px;
+  line-height: 1.2;
+  margin-top: 12px;
 }
 
 .layer {
@@ -699,19 +768,23 @@ h3 {
 }
 @media screen and (max-width: 540px) {
   .layer {
-    height: 675px;
+    height: 510px;
   }
 }
 .layer .reveal-text {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
 }
 .layer .reveal-text p {
   color: #00ec93;
   padding-top: 128px;
   line-height: 47px;
+}
+@media screen and (max-width: 540px) {
+  .layer .reveal-text p {
+    padding-top: 28px;
+  }
 }
 .layer .reveal-text h2 {
   font-weight: 700;
@@ -720,6 +793,17 @@ h3 {
   color: white;
   padding-bottom: 128px;
   text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .layer .reveal-text h2 {
+    line-height: 1.2;
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .layer .reveal-text h2 {
+    padding-bottom: 28px;
+  }
 }
 .layer .special-img {
   display: flex;
@@ -754,32 +838,25 @@ h3 {
   width: 100%;
   background: linear-gradient(112.06deg, #fbfbfd 20.53%, #e1e5e8 83.9%);
   border-radius: 16px;
-}
-.download-card p {
-  padding-top: 38px;
-  padding-left: 33px;
-}
-.download-card h2 {
-  padding-left: 33px;
+  padding: 40px 32px 74px 32px;
 }
 .download-card .card-image {
   display: flex;
   justify-content: center;
 }
 .download-card .card-image img {
-  max-width: 478px;
-  width: 100%;
+  max-width: 100%;
 }
 .download-card .window-btn {
   display: flex;
   justify-content: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 .download-card .window-btn button {
   max-width: 155px;
   width: 100%;
   height: 50px;
+  border: 1px solid #002737;
+  border-radius: 4px;
 }
 
 .quick-text {
@@ -810,6 +887,7 @@ h3 {
   display: flex;
   gap: 31px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer-second-section {
@@ -842,10 +920,22 @@ h3 {
 }
 .end .footer-para {
   font-size: 16px;
-  line-height: 32px;
+  line-height: 1.2;
+}
+@media screen and (max-width: 540px) {
+  .end .footer-para {
+    padding: 14px;
+  }
 }
 .end .envelop-icon {
   padding-right: 12px;
+}
+@media screen and (max-width: 540px) {
+  .end .envelop-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .container-b {
@@ -861,7 +951,12 @@ h3 {
 }
 @media screen and (max-width: 540px) {
   .container-b {
-    padding: 0 36px;
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container-b {
+    display: block;
   }
 }
 
