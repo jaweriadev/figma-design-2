@@ -3,7 +3,7 @@
   gap: 12px;
   width: 100%;
   justify-content: flex-end;
-  @media screen and(max-width:992px) {
+  @media screen and (max-width: 992px) {
     display: none;
   }
 }
@@ -26,15 +26,15 @@
   background: white;
 }
 .item {
-  @media screen and(max-width:1200px) and (min-width: 992px) {
+  @media screen and (max-width: 1200px) and (min-width: 992px) {
     display: none;
   }
 }
 .moredrop {
-  @media screen and(max-width:1920px) and (min-width: 1200px) {
+  @media screen and (max-width: 1920px) and (min-width: 1200px) {
     display: none;
   }
-  @media screen and(max-width:1200px) {
+  @media screen and (max-width: 1200px) {
     display: block;
   }
 }
@@ -76,14 +76,14 @@
   background-position: center right;
   height: 670px;
   background-size: cover;
-  @media screen and(max-width:767px) {
+  @media screen and (max-width: 767px) {
     background-image: none;
     height: unset;
   }
 }
 .first-bg {
   display: none;
-  @media screen and(max-width:767px) {
+  @media screen and (max-width: 767px) {
     display: block;
 
     width: 100%;
@@ -179,13 +179,13 @@
   column-gap: 40px;
   row-gap: 40px;
 
-  @media screen and(max-width:1500px) and (min-width: 1200px) {
+  @media screen and (max-width: 1500px) and (min-width: 1200px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  @media screen and(max-width:1200px) and (min-width: 767px) {
+  @media screen and (max-width: 1200px) and (min-width: 767px) {
     grid-template-columns: 1fr 1fr;
   }
-  @media screen and(max-width:767px) {
+  @media screen and (max-width: 767px) {
     grid-template-columns: 1fr;
     justify-items: center;
   }
@@ -206,7 +206,7 @@
     max-width: 338px;
     width: 100%;
     // height: 323px;
-    @media screen and(max-width:1755px) and (min-width: 1500px) {
+    @media screen and (max-width: 1755px) and (min-width: 1500px) {
       max-width: 280px;
       width: 100%;
     }
@@ -223,11 +223,11 @@
     padding-bottom: 48px;
     padding-top: 120px;
     line-height: 36px;
-    @media screen and(max-width:1024px) {
+    @media screen and (max-width: 1024px) {
       padding-top: 0;
     }
   }
-  @media screen and(max-width:1024px) {
+  @media screen and (max-width: 1024px) {
     padding: 28px;
   }
 }
@@ -286,7 +286,7 @@
   justify-content: center;
   gap: 10px;
   padding-bottom: 101px;
-  @media screen and(max-width:425px) {
+  @media screen and (max-width: 425px) {
     flex-wrap: wrap;
   }
 }
@@ -342,10 +342,10 @@
 .left-popular {
   position: relative;
   width: 50%;
-  background-image: url("/dist/images/robot-mobile.png");
+  background-image: url("/images/robot-mobile.png");
   background-size: 100% 100%;
   z-index: 0;
-  @media screen and(max-width:1200px) {
+  @media screen and (max-width: 1200px) {
     width: 100%;
     height: 350px;
   }
@@ -367,7 +367,7 @@
   justify-content: center;
   gap: 45px;
   padding-bottom: 113px;
-  @media screen and(max-width:1200px) {
+  @media screen and (max-width: 1200px) {
     flex-wrap: wrap;
   }
 }
@@ -398,7 +398,7 @@
   flex-direction: column;
   gap: 36px;
   justify-content: space-between;
-  @media screen and(max-width:1200px) {
+  @media screen and (max-width: 1200px) {
     width: 100%;
     height: 350px;
   }
@@ -418,14 +418,14 @@
     gap: 30px;
     align-items: center;
     padding-left: 31px;
-    @media screen and(max-width:440px) {
+    @media screen and (max-width: 440px) {
       padding-left: 0;
     }
     h3 {
       font-weight: 700;
       font-size: 30px;
       line-height: 36px;
-      @media screen and(max-width:540px) {
+      @media screen and (max-width: 540px) {
         font-size: 18px;
         line-height: 34px;
       }
@@ -436,7 +436,7 @@
       border-radius: 100px;
 
       padding: 32px;
-      @media screen and(max-width:540px) {
+      @media screen and (max-width: 540px) {
         padding: 9px;
       }
     }
@@ -469,7 +469,7 @@
   padding-left: 60px;
   display: flex;
   flex-direction: column;
-  @media screen and(max-width:540px) {
+  @media screen and (max-width: 540px) {
     padding-left: unset;
   }
 
@@ -477,7 +477,7 @@
     padding-top: 60px;
     margin-bottom: auto;
 
-    @media screen and(max-width:540px) {
+    @media screen and (max-width: 540px) {
       margin-left: 0px;
       padding: 12px;
       padding: unset;
@@ -497,7 +497,7 @@
     line-height: 75px;
 
     padding-top: 91px;
-    @media screen and(max-width:540px) {
+    @media screen and (max-width: 540px) {
       font-size: 24px;
       line-height: 1.2;
       padding-top: 0;
@@ -511,7 +511,7 @@
 
     padding-right: 72px;
     padding-top: 21px;
-    @media screen and(max-width:540px) {
+    @media screen and (max-width: 540px) {
       padding-right: unset;
       padding: 12px;
       font-size: 16px;
@@ -522,7 +522,7 @@
 .robot-1 {
   display: flex;
   justify-content: flex-end;
-  @media screen and(max-width:540px) {
+  @media screen and (max-width: 540px) {
     flex-direction: column-reverse;
     gap: 12px;
   }
@@ -530,7 +530,7 @@
     margin: auto;
 
     width: 70%;
-    @media screen and(max-width:540px) {
+    @media screen and (max-width: 540px) {
       width: 50%;
     }
   }
@@ -543,7 +543,7 @@
     padding-left: 60px;
     width: 30%;
     align-items: flex-end;
-    @media screen and(max-width:540px) {
+    @media screen and (max-width: 540px) {
       align-items: none;
       width: 45%;
       padding-left: 0;
@@ -611,7 +611,7 @@
   }
 }
 .layer {
-  background-image: url(/dist/images/Layer-bg.png);
+  background-image: url(/images/Layer-bg.png);
   background-position: center center;
   background-size: cover;
   height: 1221px;

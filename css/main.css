@@ -84,6 +84,7 @@ h3 {
   margin: 0 auto;
   padding: 0 40px;
   height: 80px;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   left: 0;
@@ -151,7 +152,7 @@ h3 {
 }
 
 .bg {
-  background-image: url("/dist/images/bg-img.png");
+  background-image: url("/images/bg-img.png");
   background-position: center right;
   height: 670px;
   background-size: cover;
@@ -266,7 +267,7 @@ h3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   -moz-column-gap: 40px;
-       column-gap: 40px;
+  column-gap: 40px;
   row-gap: 40px;
 }
 @media screen and (max-width: 1500px) and (min-width: 1200px) {
@@ -336,7 +337,7 @@ h3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   -moz-column-gap: 48px;
-       column-gap: 48px;
+  column-gap: 48px;
   row-gap: 48px;
   border-radius: 10px;
   overflow: auto;
@@ -505,9 +506,13 @@ h3 {
   left: 50%;
   opacity: 0.8;
   transform: translate(-50%, -50%);
-  background: radial-gradient(87.56% 195.84% at 14.14% 27.09%, rgba(18, 255, 255, 0.5) 0%, rgba(253, 151, 226, 0.5) 100%);
+  background: radial-gradient(
+    87.56% 195.84% at 14.14% 27.09%,
+    rgba(18, 255, 255, 0.5) 0%,
+    rgba(253, 151, 226, 0.5) 100%
+  );
   -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   border: 1px solid #ffffff;
 }
 
@@ -755,7 +760,7 @@ h3 {
 }
 
 .layer {
-  background-image: url(/images/Layer-bg.png);
+  background-image: url("/images/Layer-bg.png");
   background-position: center center;
   background-size: cover;
   height: 1221px;
@@ -961,4 +966,4 @@ h3 {
 
 body {
   font-family: "Roboto", sans-serif;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
